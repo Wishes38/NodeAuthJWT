@@ -1,0 +1,16 @@
+services:
+  mongo:
+    image: mongo:5.0
+    container_name: mongo-container
+    environment:
+      MONGO_INITDB_DATABASE: jwt
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin123
+    ports:
+      - "27017:27017"
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    name: my_network
