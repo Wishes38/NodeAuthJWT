@@ -74,8 +74,8 @@ Create a `.env` file in the root directory and add the following variables:
 `MONGO_URI=mongodb://localhost:27017/your_database
 JWT_SECRET=your_access_token_secret
 JWT_REFRESH=your_refresh_token_secret
-CORS_ORIGIN=http://localhost:3000` 
-
+CORS_ORIGIN=http://localhost:3000 <optional>` 
+"Optional: Docker Compose configuration for running the application with MongoDB."
 ### **4. Start the Server**
 
 `npm start` 
